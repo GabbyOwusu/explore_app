@@ -55,7 +55,7 @@ class Details extends StatelessWidget {
         padding: EdgeInsets.only(bottom: 80, left: 20, right: 20),
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('images/beach1.jpg'), fit: BoxFit.cover),
+              image: AssetImage('images/beach2.jpg'), fit: BoxFit.cover),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -65,6 +65,7 @@ class Details extends StatelessWidget {
               'Chasing Waves',
               style: TextStyle(
                 fontSize: 30,
+                color: Colors.white,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -73,6 +74,7 @@ class Details extends StatelessWidget {
               'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum',
               style: TextStyle(
                 height: 2,
+                color: Colors.white,
                 fontSize: 14,
               ),
             ),
@@ -93,34 +95,33 @@ class Details extends StatelessWidget {
                     width: 200,
                     margin: EdgeInsets.only(right: 20),
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Center(
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
                             'Book now',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
+                            style: TextStyle(fontSize: 20, color: Colors.black),
                           ),
                           Icon(
                             Icons.arrow_forward_ios,
-                            color: Colors.white,
+                            color: Colors.black,
                             size: 18,
                           ),
                           Icon(
                             Icons.arrow_forward_ios,
                             size: 18,
                             color: Colors.white,
-                          )
+                          ),
                         ],
                       ),
                     ),
                   ),
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
